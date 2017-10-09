@@ -1,3 +1,4 @@
+//linear search algorithm
 func linearSearch<T: Equatable>(_ array: [T], _ object: T) -> Int? {
     for (index, obj) in array.enumerated() where obj == object {
         return index
@@ -5,6 +6,6 @@ func linearSearch<T: Equatable>(_ array: [T], _ object: T) -> Int? {
     return nil
 }
 
-let array = [5, 2, 4, 7]
-linearSearch(array, 2) 	// returns 1
-linearSearch(array, 3) // returns nil
+//Testing
+let array = [5, 4, 7, 32, 2, 7]
+linearSearch(array, 2) 	// This will return 4
